@@ -1,0 +1,40 @@
+.navbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
+    margin-top: 1.25em;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-right: 1.25em;
+}
+
+.nav-link{
+    font-family: "MuseoModerno", sans-serif;
+    font-size: 1.25rem;
+    font-weight: 700;
+    list-style: none;
+    cursor: pointer;
+    z-index: 2;
+
+}
+
+.nav-link-container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.hover-line{
+    position: absolute;
+    background-color: #3362E0;
+    width: 70px;
+    height: 5px;
+    z-index: 1;
+}
