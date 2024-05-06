@@ -5,7 +5,7 @@
     align-items: center;
 }
 
-.container{
+.about-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -15,7 +15,7 @@
 
 /* TYPOGRAPHY */
 
-.header{
+.about-header{
     font-family: "MuseoModerno", sans-serif;
     font-size: 1.25rem;
     margin-bottom: 1.25em;  
