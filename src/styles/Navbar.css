@@ -4,11 +4,6 @@
     justify-content: flex-end;
     width: 100%;
     margin-top: 1.25em;
-}
-
-.nav-list{
-    display: flex;
-    flex-direction: row;
     gap: 30px;
     margin-right: 1.25em;
 }
@@ -20,6 +15,8 @@
     list-style: none;
     cursor: pointer;
     z-index: 2;
+    text-decoration: none;
+    color: black;
 
 }
 
@@ -34,7 +31,16 @@
 .hover-line{
     position: absolute;
     background-color: #3362E0;
-    width: 70px;
     height: 5px;
+    width: 0%;
     z-index: 1;
+    transition: width 0.3s ease-in-out;
+    transform-origin: left;
+    left: 0;
+    
 }
+.nav-link-container .nav-link:hover + .hover-line,
+.nav-link-container .nav-link.active + .hover-line{
+    width: 100%;
+}
+

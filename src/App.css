@@ -3,7 +3,7 @@
   padding: 0;
 }
 
-.background{
+.main-background{
     display: flex;
     flex-direction: column;
     background-color: #E5E4E6;
@@ -12,5 +12,4 @@
     background-image: url("grid.png");
     background-size: cover;
     background-position: center;
-    
 }
