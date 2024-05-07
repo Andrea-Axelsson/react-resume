@@ -1,15 +1,15 @@
 import React from 'react'
 import '../styles/Navbar.css'
-import { NavLink, useLocation } from 'react-router-dom'
-import { isAction } from '@reduxjs/toolkit'
+import { NavLink} from 'react-router-dom'
 
-/* Conditionally render the blue line, 
-both in active mode and in hover state 
-*/
+import {buttonToggle} from '../features/toggleMode/toggleMode.js'
+import { useSelector } from 'react-redux';
+import classNames from 'classnames'
 
 const Navbar = () => {
-
-    const location = useLocation()
+    
+    const button = useSelector(state => state.toggleMode.buttonToggle)
+    
 
   return (
     <nav className='navbar'>
@@ -18,34 +18,40 @@ const Navbar = () => {
             <NavLink
                 to="/"
                 
-                className={({isActive}) => (isActive ? 'nav-link active' : 'nav-link')}
+                className={({ isActive }) => 
+                    classNames('nav-link', { 'active': isActive, 'dark': button })
+                }
                 >
                 About
             </NavLink>
             <div className='hover-line'></div>
-                {/* {location.pathname === '/' && <div className='hover-line'></div>} */}
+                
         </div>
 
         <div className='nav-link-container'>
             <NavLink
                 to="/projects"
-                className='nav-link'
+                className={({ isActive }) => 
+                    classNames('nav-link', { 'active': isActive, 'dark': button })
+                }
                 >
                     Projects
             </NavLink>
             <div className='hover-line'></div>
-            {/* {location.pathname === '/projects' && <div className='hover-line'></div>} */}
+            
         </div>
 
         <div className='nav-link-container'>
             <NavLink
                 to="/contact"
-                className='nav-link'
+                className={({ isActive }) => 
+                    classNames('nav-link', { 'active': isActive, 'dark': button })
+                }
                 >
                 Contact
             </NavLink>
             <div className='hover-line'></div>
-            {/* {location.pathname === '/contact' && <div className='hover-line'></div>} */}
+            
         </div>
         
     </nav>

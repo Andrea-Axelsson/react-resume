@@ -18,8 +18,14 @@
     justify-content: center;
     align-items: start;
     cursor: pointer;
+    border: solid 1px #D2D2D2;
 }
-
+.toggle-body.dark{
+    background-color: black;
+    border: solid 1px #D2D2D2;
+    align-items: end;
+    
+}
 .toggle-ball{
     background-color: #3362E0;
     width: 20px;

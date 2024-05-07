@@ -21,8 +21,13 @@
     margin-bottom: 1.25em;  
 }
 
+
 .big-name, .body{
     font-family: "League Spartan", sans-serif;
+    
+}
+.big-name.dark, .body.dark, .about-header.dark{
+    color: white;
     
 }
 

@@ -36,6 +36,10 @@ width: 300px;
     font-family: "League Spartan", sans-serif;
 }
 
+.header.dark, .repo-link.dark, .repo-desc.dark{
+    color: white;
+}
+
 .asterisk{
     color: #3362E0;
 }

@@ -20,6 +20,11 @@
     color: black;
 
 }
+.nav-link.dark{
+    
+    color: white;
+
+}
 
 .nav-link-container{
     position: relative;

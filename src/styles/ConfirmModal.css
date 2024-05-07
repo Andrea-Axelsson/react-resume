@@ -1,0 +1,23 @@
+.confirm-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    padding: 40px;
+    width: fit-content;
+    margin:20px auto;
+    border-radius: 5px;
+
+}
+
+.confirm-text{
+    font-size: 1rem;
+    font-family: "League Spartan", sans-serif;
+    text-align: center;
+}
+
+.name{
+    color: #3362E0;
+    font-weight: 700;
+}

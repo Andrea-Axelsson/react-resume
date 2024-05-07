@@ -11,6 +11,11 @@
     height: 100vh;
     background-image: url("grid.png");
     background-size: cover;
-    background-position: center;
+    background-position: 1000px center;
     padding: 1.25em;
+}
+
+.main-background.dark{
+    background-color: #3a3a3a;
+    background-image: url("grid-dark.png");
 }
