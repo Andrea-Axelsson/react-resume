@@ -8,12 +8,13 @@ import classNames from 'classnames'
 
 const Navbar = () => {
     
+    // Hämtar knappens tillstånd från Redux-store för att bestämma temat.
     const button = useSelector(state => state.toggleMode.buttonToggle)
     
 
   return (
     <nav className='navbar'>
-
+ {/* Loopar igenom flera NavLink-komponenter som var och en representerar en länk i navigeringsfältet */}
         <div className='nav-link-container'>
             <NavLink
                 to="/"
@@ -21,6 +22,9 @@ const Navbar = () => {
                 className={({ isActive }) => 
                     classNames('nav-link', { 'active': isActive, 'dark': button })
                 }
+                /* // Tilldelar dynamiskt 'nav-link' som grundklass.
+                // Klassen 'active' läggs till när NavLink är den aktuella aktiva rutten (när 'isActive' är true).
+                // Klassen 'dark' läggs till baserat på 'button'-tillståndet från Redux, vilket kan växla mellan teman som mörkt eller ljust. */
                 >
                 About
             </NavLink>

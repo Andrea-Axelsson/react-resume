@@ -1,3 +1,6 @@
+// Funktionen 'fetchRepos' utför ett asynkront API-anrop till GitHub för att hämta en användares repositories. Den använder en 'Authorization' header med en access token för att autentisera anropet och specifierar att svaret ska följa GitHub API v3 formatet. Om anropet lyckas, konverteras svaret till JSON och returneras. Vid fel loggas felet och en tom lista returneras.
+
+
 const accessToken = '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'
 
   const headers = {

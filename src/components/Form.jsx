@@ -3,7 +3,7 @@ import '../styles/Form.css'
 import ConfirmModal from './ConfirmModal';
 
 const Form = () => {
-
+// State för att lagra och uppdatera formulärdata
     const [formData, setFormData] = useState({
         name: '',
         email: '',
@@ -11,8 +11,10 @@ const Form = () => {
         message: ''
     });
 
+    // State för att styra synligheten av bekräftelsemodalen.
     const [modalVisible, setModalVisible] = useState(false)
 
+    // Hanterar inputändringar och uppdaterar formData state dynamiskt baserat på inputnamn.
     const handleChange = (e) => {
         const { name, value } = e.target;
         setFormData(prevState => ({
@@ -23,16 +25,17 @@ const Form = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
+        // Förhindrar sidomladdning vid formulärinskick.
 
         if (!formData.name || !formData.email || !formData.subject || !formData.message) {
 
-            alert('Please fill in all fields before submitting.');
+            alert('Please fill in all fields before submitting.');// Validering för att säkerställa att alla fält är ifyllda.
             return;
         }else{
-            setModalVisible(true)
+            setModalVisible(true)// Aktiverar modalen vid framgångsrikt inskick.
             setTimeout(() => {
                 setModalVisible(false)
-            }, 3000)
+            }, 3000)// Stänger modalen automatiskt efter 3 sekunder.
         }
     };
 

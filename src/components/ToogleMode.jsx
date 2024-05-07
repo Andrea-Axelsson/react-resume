@@ -7,10 +7,10 @@ const ToogleMode = () => {
 const button = useSelector(state => state.toggleMode.buttonToggle)
 const dispatch = useDispatch()
 
-console.log("BUTTON TOGGLE", button)
 
   return (
     <section className='toggle-container'>
+      {/* Togglar dark eller light mode i className */}
     <div onClick={() => dispatch(buttonToggle())} className={button ? 'toggle-body dark': 'toggle-body'}>
         <div className='toggle-ball'></div>
     </div>

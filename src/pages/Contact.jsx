@@ -10,6 +10,7 @@ const Contact = () => {
 
   return (
     <>
+     {/* Dynamisk klassnamnstilldelning baserat på om 'button' tillståndet är sant eller falskt, ändrar stilen för dark eller light mode. */}
      <h1 className={ button ? "header dark" : "header"}>Contact me<span className="asterisk">*</span></h1>
     <Form/>
     

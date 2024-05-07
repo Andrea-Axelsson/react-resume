@@ -58,4 +58,6 @@ CSS-moduler används för att ge en unik stil till varje komponent, och sidans l
 
 `classnames` är ett litet, men mycket användbart bibliotek som förenklar arbetet med CSS-klassnamn i React. Det gör det möjligt att dynamiskt hantera klassnamn baserat på komponentens state eller props. Detta är särskilt användbart i detta projekt där vi använder ett mörkt läge. `classnames` hjälper till att växla CSS-klasser baserat på om det mörka läget är aktivt eller inte, vilket förenklar hanteringen av olika teman och förbättrar kodens läsbarhet och underhåll.
 
+### OBS!! props har använts i Form.jsx till ConfirmModal.jsx
+
 ---

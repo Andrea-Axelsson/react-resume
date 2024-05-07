@@ -7,11 +7,11 @@ const Layout = () => {
   return (
     <>
     
-    <Navbar/>
+    <Navbar/> {/* // Placerar Navbar-komponenten överst på varje sida. */}
     <main>
-        <Outlet/>
+        <Outlet/> {/* // Outlet fungerar som en plats där de matchade barnrutterna kommer att renderas. */}
     </main>
-    <ToogleMode/>
+    <ToogleMode/> {/* // ToogleMode-komponenten läggs till, oftast för att hantera temaväxling. */}
 
     
     </>
